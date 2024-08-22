@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Ganaretor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>PASSWORD GENERATOR</h1>
+            <div class="password_conatiner">
+                <input readonly type="text" placeholder="PASSWORD" class="password_txt">
+                <button class="cpy_btn" copy_button>
+                    <span class="cpy_msg"></span>
+                     <img src="image.png" alt="copy_img">
+                </button>
+            </div>
+            <div class="cal">
+                <div class="length_container">
+                    <p>Password length</p>
+                    <p pass_length>0</p>
+                </div>
+                <div class="slider">
+                    <input type="range" min="0" max="20" step="1" class="slider_text">
+                </div>
+                <div class="check">
+                    <div>
+                        <input type="checkbox" uppercase id="upperCase">
+                        <label for="upperCase">Include upperCase</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" lowercase id="lowerCase">
+                        <label for="lowerCase">Include lowerCase</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" number id="numbers">
+                        <label for="number">Include Numbers</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" Symbol id="symbol">
+                        <label for="symbol">Include Symbol</label>
+                    </div>
+                </div>
+            <!--strength section-->
+            <div class="strength_check">
+                <p>Strength</p>
+                <div class="strength_indicater"></div>
+            </div>
+
+            <!-- PAssword genarator button-->
+             <div class="password_generator">
+                <button generate_pass>Password Ganaretor</button>
+             </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/39cbc8415b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
